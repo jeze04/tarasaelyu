@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   justify-content: center;
-  max-height: auto;
+  
 }
 
 .box span img {
@@ -55,7 +55,7 @@ body {
   /*background: url(../image/launion.jpg) no-repeat center center/cover;*/
   display: inline-flex;
   align-items: center;
-  min-height: 500px;
+  max-height: auto;
   background-size: cover;
   background: url("../image/welcome.jpg") no-repeat center center/cover;
 }
