@@ -31,11 +31,11 @@
 .box {
   position: relative;
   top: 100px;
+  left: 35%;
   width: 300px;
   height: 200px;
   transform-style: preserve-3d;
   animation: animate 20s linear infinite;
-  justify-content: center;
 }
 @keyframes animate {
   0% {
