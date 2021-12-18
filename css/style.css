@@ -9,12 +9,14 @@
 }
 
 .box span img {
+  padding-top: 20px;
+  padding-bottom: 15px;
   position: absolute;
   top: 50;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 120%;
+  object-fit: cover; 
 }
 .box span {
   position: absolute;
@@ -28,6 +30,7 @@
   -webkit-box-reflect: below 0px
     linear-gradient(transparent, transparent, #0004);
 }
+
 .box {
   position: relative;
   top: 100px;
@@ -37,6 +40,7 @@
   transform-style: preserve-3d;
   animation: animate 20s linear infinite;
 }
+
 @keyframes animate {
   0% {
     transform: perspective(800px) rotateY(0deg);
@@ -52,7 +56,6 @@ html,
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5em; /*1.5em-2inches*/
-  /*background: url(../image/launion.jpg) no-repeat center center/cover;*/
   display: inline-flex;
   align-items: center;
   max-height: auto;
@@ -62,11 +65,13 @@ body {
 
 #container {
   border: solid gray 1px;
+  
 }
 
 #hero {
-  height: 600px;
+  height: auto;
   overflow: auto;
+  padding-bottom: 30px;
 }
 
 #hero .hero-background {
@@ -74,7 +79,7 @@ body {
   opacity: 0.9;
   border: 10px solid #fff;
   width: 1550 px;
-  margin-top: 120px;
+  margin-top: 200px;
 }
 #hero .hero-content {
   /*padding: 50px;*/
@@ -191,7 +196,7 @@ p {
 
 .container {
   margin: auto;
-  max-width: 1100px;
+  max-width: 1200px;
   overflow: auto;
   padding: 0 20px;
 }
@@ -235,21 +240,24 @@ p {
   color: #ffb740;
 }
 
+/*
 #testimonials {
   background: url("../image/launion.jpg") no-repeat center center/cover;
-  height: 800px;
-  overflow: hidden;
+  height: auto;
+  overflow:hidden;
+  opacity: 1;
 }
 
 #testimonials .testimonial img {
+  
   height: 200px;
-  width: 300px;
+  width: 400px;
   float: left;
   margin-right: 20px;
-  border-radius: 10%;
+  border-radius: 20%; */
 }
 
-.row {
+.row1 {
   background: rgba(39, 62, 84, 0.4);
   overflow: hidden;
   height: 600px;
@@ -270,9 +278,10 @@ p {
   margin-bottom: 20px;
 }
 
-.bg-primary {
+/*.bg-primary {
   background: rgba(255, 255, 255, 0.4);
-}
+
+}*/
 
 #testimonials .testimonial {
   padding: 20px;
@@ -287,4 +296,179 @@ p {
   height: 70px;
   overflow: auto;
   text-align: center;
+}
+
+/*
+.hi-slide .hi-next,
+  .hi-slide .hi-prev {
+    position:absolute;
+    top:50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffefd5;
+    color:black;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hi-slide .hi-next:hover,
+  .hi-slide .hi-prev:hover {
+
+    opacity:1;
+    background-color: white;
+
+  } 
+
+  .hi-slide .hi-prev {
+    left: -70px;
+  }
+
+  .hi-slide .hi-next {
+    right: -70px;
+  }
+
+  .hi-slide .hi-prev::before {
+    content: '<'
+  }
+
+  .hi-slide .hi-next::before {
+    content: '>'
+  }
+
+  /*gall*/
+
+  .carousel .carousel-item {
+    height: 300px;
+    top: 100px;
+    max-width: auto;
+
+    }
+  .carousel-item img {
+      position: absolute;
+      object-fit:cover;
+     margin-top: 200px;
+      left: 100px;
+      right: 100px;
+      align-content: center;
+  }
+
+  #carouselExampleControls{
+    min-width: auto;
+    margin-left: 150px;
+  }
+
+
+  /* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input [type=date] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  size:3px;
+}
+
+
+
+/* Style the container */
+.container1 {
+  border-radius: 5px;
+  background-color: #050505;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: auto) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+#form {
+  height: auto;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+
+#form .form-background {
+  background-color: #334756;
+  opacity: 0.9;
+  border: 10px solid #fff;
+  width: 1550 px;
+  margin-top: 30px;
+}
+#form .form-content {
+  /*padding: 50px;*/
+  margin: 50px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 30;
+}
+
+.form1-text {
+  color: #fcc55f;
+  font-size: larger;
+}
+
+input[type=submit]  {
+  background-color: #0e012c;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 1em;
+  border-style: double;
+  box-shadow: #4CAF50;
+}
+
+input[value=Submit]  {
+  color: white;
+  font-size: 1.5rem;
+ 
 }
