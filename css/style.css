@@ -274,3 +274,19 @@ p {
   overflow: auto;
   text-align: center;
 }
+.carousel .carousel-item {
+        height: 600px;
+        max-width: auto;
+
+        }
+      .carousel-item img {
+          position: absolute;
+          object-fit:cover;
+
+      }
+  
+      #carouselExampleControls{
+        min-width: 500px;
+        margin-left: 150px;
+        max-width: auto;
+      }
